@@ -1,6 +1,6 @@
 const apiKey = import.meta.env['VITE_API_KEY'];
 
-export const get = async (request) => {
+export const get = async () => {
 	const rsp = await fetch(
 		`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US`
 	);
