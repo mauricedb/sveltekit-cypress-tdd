@@ -7,11 +7,11 @@ describe('Navigation', () => {
 
 	it('can navigate to the movies page', () => {
 		cy.get('nav').contains('a', 'Movies').click();
-		cy.url().should('include', '/movies');
+		cy.location('pathname').should('eq', '/movies');
 	});
 
 	it('can navigate to the about page', () => {
 		cy.get('nav').contains('a', 'About').click();
-		cy.url().should('include', '/about');
+		cy.location('pathname').should('eq', '/about');
 	});
 });
