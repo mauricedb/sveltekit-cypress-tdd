@@ -6,12 +6,12 @@ describe('Navigation', () => {
 	});
 
 	it('can navigate to the movies page', () => {
-		cy.get('nav').contains('Movies').click();
+		cy.get('nav').contains('a', 'Movies').click();
 		cy.url().should('include', '/movies');
 	});
 
 	it('can navigate to the about page', () => {
-		cy.get('nav').contains('About').click();
+		cy.get('nav').contains('a', 'About').click();
 		cy.url().should('include', '/about');
 	});
 });

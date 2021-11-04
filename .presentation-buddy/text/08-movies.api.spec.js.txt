@@ -8,8 +8,7 @@ describe('The movies.json API', () => {
 				expect(movies).to.have.length(20);
 				expect(movies[0]).to.have.property('id').and.to.be.a('number');
 				expect(movies[0]).to.have.property('title').and.to.be.a('string');
-				expect(movies[0]).to.have.property('overview').and.to.be.a('string');
-				expect(movies[0]).to.have.property('backdrop_path').and.to.be.a('string');
+				// Etc.
 			});
 	});
 });

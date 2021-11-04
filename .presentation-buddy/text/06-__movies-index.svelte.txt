@@ -1,9 +1,11 @@
 <script>
+	import MovieCard from '$lib/MovieCard.svelte';
+
 	export let movies = [
 		{
 			id: 278,
 			title: 'The Shawshank Redemption',
-			overview: 'Good movie',
+			overview: 'A good movie',
 			backdrop_path: '/iNh3BivHyg5sQRPP1KOkzguEX0H.jpg'
 		},
 		{
