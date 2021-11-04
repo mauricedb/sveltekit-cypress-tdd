@@ -1,0 +1,15 @@
+<script context="module">
+	export const load = async ({ fetch }) => {
+		const rsp = await fetch('/movies.json');
+		if (rsp.ok) {
+			const data = await rsp.json();
+			return {
+				props: {
+					movies: data
+				}
+			};
+		}
+
+		throw new Error(`Failed to load data: ${rsp.statusText}`);
+	};
+</script>

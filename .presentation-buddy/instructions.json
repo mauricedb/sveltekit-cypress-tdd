@@ -17,8 +17,7 @@
 	},
 	{
 		"type": "wait",
-		"delay": 1,
-		// "delay": "manual",
+		"delay": "manual",
 		"save": true
 	},
 
@@ -41,8 +40,7 @@
 	},
 	{
 		"type": "wait",
-		"delay": 1,
-		// "delay": "manual",
+		"delay": "manual",
 		"save": true
 	},
 
@@ -64,8 +62,7 @@
 	},
 	{
 		"type": "wait",
-		"delay": 1,
-		// "delay": "manual",
+		"delay": "manual",
 		"save": true
 	},
 
@@ -87,8 +84,7 @@
 	},
 	{
 		"type": "wait",
-		"delay": 1,
-		// "delay": "manual",
+		"delay": "manual",
 		"save": true
 	},
 
@@ -128,8 +124,7 @@
 	},
 	{
 		"type": "wait",
-		"delay": 1,
-		// "delay": "manual",
+		"delay": "manual",
 		"save": true
 	},
 
@@ -151,8 +146,7 @@
 	},
 	{
 		"type": "wait",
-		"delay": 1,
-		// "delay": "manual",
+		"delay": "manual",
 		"save": true
 	},
 
@@ -179,8 +173,7 @@
 	},
 	{
 		"type": "wait",
-		"delay": 1,
-		// "delay": "manual",
+		"delay": "manual",
 		"save": true
 	},
 
@@ -226,8 +219,7 @@
 
 	{
 		"type": "wait",
-		"delay": 1,
-		// "delay": "manual",
+		"delay": "manual",
 		"save": true
 	},
 
@@ -249,8 +241,101 @@
 	},
 	{
 		"type": "wait",
-		"delay": 1,
-		// "delay": "manual",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "src/routes/movies/index.json.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/09-index.json.js.txt"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "src/routes/movies/index.svelte"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 1,
+		"column": 1
+	},
+	{
+		"type": "typeText",
+		"text": ["", "", ""]
+	},
+	{
+		"type": "goto",
+		"line": 1,
+		"column": 1
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/10-__movies-index.svelte.txt"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	// {
+	// 	"type": "createFile",
+	// 	"path": "cypress/fixtures/movies.json"
+	// },
+	// {
+	// 	"type": "wait",
+	// 	"delay": 1000
+	// },
+	// {
+	// 	"type": "typeTextFromFile",
+	// 	"path": "./text/11-movies.fixture.json.txt"
+	// },
+	// {
+	// 	"type": "wait",
+	// 	"delay": "manual",
+	// 	"save": true
+	// },
+
+	{
+		"type": "createFile",
+		"path": "cypress/integration/movies.spec.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/12-movies.spec.js.txt"
+	},
+	{
+		"type": "wait",
+		"delay": "manual",
 		"save": true
 	},
 
