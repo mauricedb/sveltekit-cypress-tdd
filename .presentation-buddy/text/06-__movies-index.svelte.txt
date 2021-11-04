@@ -1,0 +1,16 @@
+<script>
+	export let movies = [
+		{
+			id: 278,
+			title: 'The Shawshank Redemption',
+			overview: 'Good movie',
+			backdrop_path: '/iNh3BivHyg5sQRPP1KOkzguEX0H.jpg'
+		},
+		{
+			id: 680,
+			title: 'Pulp Fiction',
+			overview: 'Another good movie',
+			backdrop_path: '/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg'
+		}
+	];
+</script>

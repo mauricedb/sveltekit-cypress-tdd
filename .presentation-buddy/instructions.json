@@ -1,0 +1,261 @@
+[
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "cypress.json"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/01-cypress.json.txt"
+	},
+	{
+		"type": "wait",
+		"delay": 1,
+		// "delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "cypress.json"
+	},
+	{
+		"type": "goto",
+		"line": 2,
+		"column": 999
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/02-cypress.json.txt"
+	},
+	{
+		"type": "wait",
+		"delay": 1,
+		// "delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "cypress/integration/navigation.spec.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/03-navigation.spec.js.txt"
+	},
+	{
+		"type": "wait",
+		"delay": 1,
+		// "delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "src/routes/__layout.svelte"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/04-__layout.svelte.txt"
+	},
+	{
+		"type": "wait",
+		"delay": 1,
+		// "delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "cypress/integration/navigation.spec.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 10,
+		"column": 999
+	},
+	{
+		"type": "typeText",
+		"text": ["", "        cy.title().should('eq', 'Movies');"]
+	},
+	{
+		"type": "goto",
+		"line": 16,
+		"column": 999
+	},
+	{
+		"type": "typeText",
+		"text": [
+			"",
+			"        cy.title().should('eq', 'About');",
+			"        cy.contains('h2', 'Maurice de Beijer').should('exist');"
+		]
+	},
+	{
+		"type": "wait",
+		"delay": 1,
+		// "delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "src/routes/movies/index.svelte"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/05-__movies-index.svelte.txt"
+	},
+	{
+		"type": "wait",
+		"delay": 1,
+		// "delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "cypress/integration/navigation.spec.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 11,
+		"column": 999
+	},
+	{
+		"type": "typeText",
+		"text": ["", "        cy.contains('h5', 'The Shawshank Redemption').should('exist');"]
+	},
+	{
+		"type": "wait",
+		"delay": 1,
+		// "delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "openFile",
+		"path": "src/routes/movies/index.svelte"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "goto",
+		"line": 1,
+		"column": 1
+	},
+	{
+		"type": "typeText",
+		"text": ["", "", ""]
+	},
+	{
+		"type": "goto",
+		"line": 1,
+		"column": 1
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/06-__movies-index.svelte.txt"
+	},
+	{
+		"type": "goto",
+		"line": 23,
+		"column": 999
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/07-__movies-index.svelte.txt"
+	},
+
+	{
+		"type": "wait",
+		"delay": 1,
+		// "delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "createFile",
+		"path": "cypress/integration/movies.api.spec.js"
+	},
+	{
+		"type": "wait",
+		"delay": 1000
+	},
+	{
+		"type": "typeTextFromFile",
+		"path": "./text/08-movies.api.spec.js.txt"
+	},
+	{
+		"type": "wait",
+		"delay": 1,
+		// "delay": "manual",
+		"save": true
+	},
+
+	{
+		"type": "command",
+		"command": "workbench.action.files.save"
+	}
+]

@@ -1,0 +1,17 @@
+/// <reference types="cypress" />
+
+describe('Navigation', () => {
+	beforeEach(() => {
+		cy.visit('/');
+	});
+
+	it('can navigate to the movies page', () => {
+		cy.get('nav').contains('Movies').click();
+		cy.url().should('include', '/movies');
+	});
+
+	it('can navigate to the about page', () => {
+		cy.get('nav').contains('About').click();
+		cy.url().should('include', '/about');
+	});
+});
