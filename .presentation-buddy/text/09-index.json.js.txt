@@ -10,10 +10,7 @@ export const get = async () => {
 	return {
 		status: 200,
 		body: body.results.map(({ id, title, overview, backdrop_path }) => ({
-			id,
-			title,
-			overview,
-			backdrop_path
+			id, title, overview, backdrop_path
 		}))
 	};
 };

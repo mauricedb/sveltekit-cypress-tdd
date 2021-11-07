@@ -208,6 +208,12 @@
 		"path": "./text/06-__movies-index.svelte.txt"
 	},
 	{
+		"type": "wait",
+		"delay": "manual",
+		"save": true
+	},
+
+	{
 		"type": "goto",
 		"line": 23,
 		"column": 999
