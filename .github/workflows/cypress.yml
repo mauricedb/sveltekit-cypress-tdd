@@ -21,6 +21,8 @@ jobs:
         with:
           start: npm run dev
           wait-on: 'http://localhost:3000'
+        env:
+          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
 
       - name: Upload Cypress Videos
         uses: actions/upload-artifact@v2
