@@ -4,6 +4,7 @@ describe('The movies page', () => {
 	beforeEach(() => {
 		cy.visit('/');
 		cy.intercept('/movies.json', { fixture: 'movies.json' }).as('movies.json');
+		cy.wait(1000);
 		cy.get('nav').contains('a', 'Movies').click();
 	});
 
