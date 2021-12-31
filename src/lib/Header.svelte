@@ -16,7 +16,7 @@
 				<ul class="navbar-nav">
 					{#each navLinks as link}
 						<li class="nav-item">
-							<a href={link.path} class="nav-link" class:active={$page.path === link.path}>
+							<a href={link.path} class="nav-link" class:active={$page.pathname === link.path}>
 								{link.title}
 							</a>
 						</li>
