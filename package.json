@@ -12,7 +12,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/kit": "next",
-		"bootstrap": "^5.1.3",
+		"bootstrap": "^5.2.0",
 		"cypress": "^10.3.0",
 		"prettier": "^2.7.1",
 		"prettier-plugin-svelte": "^2.7.0",
